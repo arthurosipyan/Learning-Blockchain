@@ -1,6 +1,6 @@
 pragma solidity ^0.6.0;
 
-contract MyContract {
+contract Arrays {
     // Array
     uint[] public uintArray = [1,2,3];
     string[] public stringArray = ["apple", "banana", "carrot"];
