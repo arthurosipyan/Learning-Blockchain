@@ -1,6 +1,6 @@
 pragma solidity ^0.6.0;
 
-contract MyContract {
+contract DataTypes {
     string public myString = "Hello, world!";
     bytes32 public myBytes32 = "Hello, world!";
     int public myInt = 1;
