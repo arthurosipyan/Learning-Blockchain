@@ -14,6 +14,7 @@ const expect = chai.expect;
 contract("Token Test", function(accounts) {
     const [ initialHolder, recipient, anotherAccount ] = accounts;
     
+    // beforeEach helps to reinitalize the tests, as oppose to running future tests on a previously migrates contract with altered values...
     beforeEach(async () => {
         this.myToken = await Token.new(1000);
     })
