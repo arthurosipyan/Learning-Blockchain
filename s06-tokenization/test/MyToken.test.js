@@ -11,12 +11,14 @@ chai.use(chaiAsPromised);
 
 const expect = chai.expect;
 
+require('dotenv').config({path: '../.env'});
+
 contract("Token Test", function(accounts) {
     const [ initialHolder, recipient, anotherAccount ] = accounts;
     
     // beforeEach helps to reinitalize the tests, as oppose to running future tests on a previously migrates contract with altered values...
     beforeEach(async () => {
-        this.myToken = await Token.new(1000);
+        this.myToken = await Token.new(process.env.INITIAL_TOKENS);
     })
 
     it("All tokens should be in my account", async () => {
