@@ -1,5 +1,5 @@
 const path = require("path");
-require('dotenv').config({path: './.env'});
+require("dotenv").config({path: "./.env"});
 const HDWalletProvider = require("@truffle/hdwallet-provider");
 const MetaMaskAccountIndex = 0;
 
