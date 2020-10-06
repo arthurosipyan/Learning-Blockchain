@@ -89,7 +89,7 @@ class App extends Component {
         <button type="button" onClick={this.handleKycSubmit}>Add Address to Whitelist</button>
         <h2>Buy Cappucino-Tokens</h2>
         <p>Send Ether to this address: {this.state.tokenSaleAddress}</p>
-        <p>You have: {this.state.userTokens}</p>
+        <p>You have: {this.state.userTokens} Capu-Tokens!</p>
         <button type="button" onClick={this.handleBuyToken}>Buy more tokens</button>
       </div>
     );
